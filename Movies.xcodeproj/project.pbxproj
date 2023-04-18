@@ -26,6 +26,9 @@
 		7D75CDB929EC58D200C560C1 /* dashboard_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75CDAB29EC58D200C560C1 /* dashboard_view.swift */; };
 		7D75CDBA29EC58D200C560C1 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75CDAC29EC58D200C560C1 /* DashboardViewModel.swift */; };
 		CA20ABC95619DE307FB96380 /* Pods_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20E924148D66FBA5A431268 /* Pods_Movies.framework */; };
+		D8CF9CEB29EEAC9F00055B46 /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CF9CEA29EEAC9F00055B46 /* ScanData.swift */; };
+		D8CF9CED29EEAEC900055B46 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CF9CEC29EEAEC900055B46 /* ScannerView.swift */; };
+		D8CF9CEF29EEB0C600055B46 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CF9CEE29EEB0C600055B46 /* TextRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		7D75CDAB29EC58D200C560C1 /* dashboard_view.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dashboard_view.swift; sourceTree = "<group>"; };
 		7D75CDAC29EC58D200C560C1 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		A075628D5E217948D3B921B8 /* Pods-Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies.release.xcconfig"; path = "Target Support Files/Pods-Movies/Pods-Movies.release.xcconfig"; sourceTree = "<group>"; };
+		D8CF9CEA29EEAC9F00055B46 /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
+		D8CF9CEC29EEAEC900055B46 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		D8CF9CEE29EEB0C600055B46 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
 		F20E924148D66FBA5A431268 /* Pods_Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -199,6 +205,8 @@
 			children = (
 				7D75CDA429EC58D200C560C1 /* dashboard_element.swift */,
 				7D75CDA529EC58D200C560C1 /* media_type.swift */,
+				D8CF9CEA29EEAC9F00055B46 /* ScanData.swift */,
+				D8CF9CEE29EEB0C600055B46 /* TextRecognizer.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -226,6 +234,7 @@
 			children = (
 				7D75CDAB29EC58D200C560C1 /* dashboard_view.swift */,
 				7D75CDAC29EC58D200C560C1 /* DashboardViewModel.swift */,
+				D8CF9CEC29EEAEC900055B46 /* ScannerView.swift */,
 			);
 			path = dashboard;
 			sourceTree = "<group>";
@@ -361,6 +370,8 @@
 				7D75CDB129EC58D200C560C1 /* dashboard_repository_impl.swift in Sources */,
 				7D75CDBA29EC58D200C560C1 /* DashboardViewModel.swift in Sources */,
 				7D75CDAE29EC58D200C560C1 /* MovieDetailsRepositoryImpl.swift in Sources */,
+				D8CF9CEF29EEB0C600055B46 /* TextRecognizer.swift in Sources */,
+				D8CF9CED29EEAEC900055B46 /* ScannerView.swift in Sources */,
 				7D75CDB929EC58D200C560C1 /* dashboard_view.swift in Sources */,
 				7D75CDB829EC58D200C560C1 /* MovieDetailsView.swift in Sources */,
 				7D75CDB729EC58D200C560C1 /* MovieDetailsViewModel.swift in Sources */,
@@ -368,6 +379,7 @@
 				7D75CDB229EC58D200C560C1 /* dashboard_data_source.swift in Sources */,
 				7D75CDB329EC58D200C560C1 /* detailed_movie.swift in Sources */,
 				7D75CDB529EC58D200C560C1 /* dashboard_element.swift in Sources */,
+				D8CF9CEB29EEAC9F00055B46 /* ScanData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +510,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Movies/Preview Content\"";
-				DEVELOPMENT_TEAM = H2GSTZ992V;
+				DEVELOPMENT_TEAM = HH8V4AZG83;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Movies/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -521,7 +533,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Movies/Preview Content\"";
-				DEVELOPMENT_TEAM = H2GSTZ992V;
+				DEVELOPMENT_TEAM = HH8V4AZG83;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Movies/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

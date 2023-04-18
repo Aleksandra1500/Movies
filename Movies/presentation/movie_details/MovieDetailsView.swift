@@ -201,14 +201,14 @@ let dummyMovie = DashboardElement(
 
 struct MovieDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailsView(movie: dummyMovie)
-            .previewDevice("iPad Pro (12.9-inch) (6th generation)")
-            .previewDisplayName("iPad Pro (12.9-inch) (6th generation)")
-            .padding()
+//        MovieDetailsView(movie: dummyMovie)
+//            .previewDevice("iPad Pro (12.9-inch) (6th generation)")
+//            .previewDisplayName("iPad Pro (12.9-inch) (6th generation)")
+//            .padding()
         
         MovieDetailsView(movie: dummyMovie)
-            .previewDevice("iPhone 14 Pro Max")
-            .previewDisplayName("iPhone 14 Pro Max")
+            .previewDevice("iPhone SE (3rd generation)")
+            .previewDisplayName("iPhone SE (3rd generation)")
             .padding()
     }
 }

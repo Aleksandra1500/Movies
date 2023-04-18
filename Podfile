@@ -7,4 +7,5 @@ target 'Movies' do
 
   # Pods for Movies
   pod 'Alamofire'
+  pod 'GoogleMLKit/TextRecognition'
 end
