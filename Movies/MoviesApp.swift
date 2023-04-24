@@ -12,7 +12,7 @@ struct MoviesApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                DashboardView()
+                HomeView()
             }
         }
     }
