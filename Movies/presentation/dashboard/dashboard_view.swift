@@ -8,11 +8,9 @@ struct DashboardView: View {
     @State private var searchText = ""
     
     var body: some View {
-        // if loading show loading indicator
         if viewModel.isLoading {
             ProgressView()
         } else {
-            TabView {
             ScrollView {
                 VStack {
                     backdropList(
@@ -33,51 +31,6 @@ struct DashboardView: View {
                     )
                 }
             }
-            .tabItem {
-                Image(systemName: "film")
-                Text("Movies")
-            }
-            List {
-                
-            }
-            .searchable(text: $searchText)
-            NavigationView {
-                VStack {
-                    if texts.count > 0 {
-                        List {
-                            ForEach(texts) {text in
-                                NavigationLink(
-                                    destination: ScrollView{Text(text.content).textSelection(.enabled)},
-                                    label: {
-                                        Text(text.content).lineLimit(1)
-                                    })
-                            }
-                        }
-                    }
-                    else {
-                        Text("Brak skanu").font(.title)
-                    }
-                }
-                .navigationTitle("Wyszukaj film")
-                .navigationBarItems(trailing:
-                                        Button(action: {
-                    self.showScannerSheet = true
-                }, label : {
-                    Image(systemName:
-                            "doc.text.viewfinder")
-                    .font(.title)
-                })
-                                            .sheet(isPresented:
-                                                    $showScannerSheet, content: {
-                    makeScannerView()
-                })
-                )
-            }
-            .tabItem {
-                Image(systemName: "magnifyingglass")
-                Text("Search")
-            }
-        }
         }
     }
 
@@ -193,18 +146,6 @@ struct DashboardView: View {
                 }
             }
         }
-    }
-    
-    private func makeScannerView() -> ScannerView {
-        ScannerView(completion: {
-            textPerPage in
-            if let outputText = textPerPage?.joined(separator: "\n").trimmingCharacters(in: .whitespacesAndNewlines){
-                let newScanData = ScanData(content: outputText)
-                self.texts.append(newScanData)
-            }
-            
-            self.showScannerSheet = false
-        })
     }
 }
 
